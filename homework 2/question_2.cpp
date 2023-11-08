@@ -11,61 +11,60 @@ Question 2: creating plane class
 
 using namespace std; //using standard library
 
-class Plane {
-protected:
-    double wait_time;
-private:
-    double pos;
-    double vel;
-    double distance;
-    double loiter_time;
-    bool at_SCE;
-    string origin;
-    string destination;
-    map <string,int> airport;
-public:
-    Plane(string from, string to);
-    ~Plane();
-    void operate (double dt) {
+class Plane { //creating plane class
+protected: //protected members
+    double wait_time; //wait time variable
+private: //private members
+    double pos; //position variable
+    double vel; //velocity variable
+    double distance; //distance variable
+    double loiter_time; //loiter time variable
+    bool at_SCE; //whether place is at State College airport
+    string origin; //starting point for plane
+    string destination; //destination of plane
+    map <string,int> airport; //map of airport code to distance from State College
+public: //public members
+    Plane(string from, string to); //constructor
+    ~Plane(); //deconstructor
+    void operate (double dt) { //operate function
     }
-    double getpos() {
-        return pos;
+    double getpos() { //getting position function
+        return pos; //return position from private section
     }
-    double getvel() {
-        return vel;
+    double getvel() { //getting velocity function
+        return vel; //return velocity from private section
     }
-    double getloiter_time() {
-        return loiter_time;
+    double getloiter_time() { //getting loiter time
+        return loiter_time; //return loiter time from private section
     }
-    string getorigin() {
-        return origin;
+    string getorigin() { //getting origin
+        return origin; //return origin from private section
     }
-    string getdestination(){
-        return destination;
+    string getdestination(){ //getting destination
+        return destination; //return destination from private section
     }
-    bool getat_SCE() {
-        return at_SCE;
+    bool getat_SCE() { //getting State College condtion
+        return at_SCE; //return whether plane is at State College
     }
-    void setvel(double x) {
-        vel = x;
+    void setvel(double x) { //setting velocity
+        vel = x; //velocity is input
     }
-    void setloiter_time(double x) {
-        loiter_time = x;
+    void setloiter_time(double x) { //setting loiter time
+        loiter_time = x; //loiter time is input
     }
-    double distance_to_SCE(double x) {
-        return x;
+    double distance_to_SCE(double x) { //finding distance to State College
+        return x; //returning distance (will fill in function in later question)
     }
-    virtual void time_on_ground() {
-        
+    virtual void time_on_ground() { //virtual function for time on the ground
     }
-    virtual string plane_type(string x) {
-        return x;
+    virtual string plane_type(string x) { //virtual function for plane type
+        return x; //returning plane type
     }
-    static double draw_from_normal_distribution (double mean, double std) {
-        return mean;
+    static double draw_from_normal_distribution (double mean, double std) { //function to get random number with set mean and standard deviation
+        return mean; //returning solution (will fill in function in later question)
     }
 };
 
-int main() {
-    return 0;
+int main() { //main function to make program compile and run
+    return 0; //returning dummy 0
 }
