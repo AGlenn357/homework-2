@@ -8,6 +8,7 @@ Question 3: implementing plane class functions
 #include <iostream> //including input output library
 #include <map> //including map library
 #include <string> //including string library
+#include <random> //including random library
 
 using namespace std;
 
@@ -27,6 +28,25 @@ public: //public members
     Plane(string from, string to); //constructor
     ~Plane(); //deconstructor
     void operate (double dt) { //operate function
+        if (loiter_time != 0) { //if loiter time doesn't equal 0
+            loiter_time -= dt; //changing loiter time value
+        }
+        else if (wait_time != 0) { //if wait time doesn't equal o
+            wait_time -= dt; //changing wait time value
+        }
+        else if (pos < distance) { //if position is less than distance
+            pos += vel*dt; //changind position value
+            at_SCE = 0; //plane is not at State College
+        }
+        else {
+            if (destination == "SCE") { //if destination in State College
+                at_SCE = 1; //plane is at State College
+            }
+            time_on_ground(); //time on ground
+            string temp = origin; //temporary variable set to origin
+            origin = destination; //setting origin to destination
+            destination = temp; //setting destination to old origin (temp);
+        }
     }
     double getpos() { //getting position function
         return pos; //return position from private section
@@ -52,15 +72,28 @@ public: //public members
     void setloiter_time(double x) { //setting loiter time
         loiter_time = x; //loiter time is input
     }
-    double distance_to_SCE(double x) { //finding distance to State College
-        return x; //returning distance (will fill in function in later question)
+    double distance_to_SCE(double distance, double pos, string destination) { //finding distance to State College
+        if (destination == "SCE") {
+            return distance-pos; //returning distance minus position
+        }
+        else { //in case condition is not met
+            return -1; //returning dummy -1 if condition is not met
+        }
     }
     virtual void time_on_ground() { //virtual function for time on the ground
     }
     virtual string plane_type(string x) { //virtual function for plane type
-        return x; //returning plane type
+        string type = "GA"; //plane type
+        return type; //returning plane type "GA"
     }
     static double draw_from_normal_distribution (double mean, double std) { //function to get random number with set mean and standard deviation
-        return mean; //returning solution (will fill in function in later question)
+        random_device rd{}; //random device
+        mt19937 gen { rd() }; //from homework assignment
+        normal_distribution<> d{mean, std}; //getting normal distribution
+        return d(gen); //returning answer
     }
 };
+
+int main() { //main function to make program compile and run
+    return 0; //returning dummy 0
+}
