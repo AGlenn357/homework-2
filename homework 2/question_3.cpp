@@ -1,8 +1,6 @@
-//
-//  homework_3.cpp
-//  homework 2
-//
-//  Created by Andrew Glenn on 11/8/23.
-//
-
-#include <stdio.h>
+/*
+Andrew Glenn
+AERSP 424
+Homework 2
+Question 3: implementing plane class functions
+*/
