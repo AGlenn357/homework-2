@@ -3,7 +3,7 @@
 #include <map> //including map library
 #include <random> //including random library for normal distribution
 
-using namespace std; //using stad
+using namespace std; //using standard library
 
 class Plane { //creating plane class
 protected: //protected members
