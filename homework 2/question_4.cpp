@@ -103,14 +103,16 @@ public: //public members
         Airline = airline; //setting Airline variable to value
     }
     ~Airliner();
+    string plane_type(string Airline) { //overridden function for plane type
+        return Airline; //returning Airline
+    }
     double time_on_ground () {
-        double mean = 600; //given mean value
-        double std = 60; //given standard deviation
+        double mean = 1800; //given mean value
+        double std = 600; //given standard deviation
         double wait_time = draw_from_normal_distribution(mean, std); //gettin wait time
         return wait_time; //returning wait time
     }
 };
-
 
 int main() { //main function to make program compile and run
     return 0; //returning dummy 0
