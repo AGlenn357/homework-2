@@ -11,6 +11,7 @@
 		875049C42AFC0A3800A04574 /* question_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 875049C32AFC0A3800A04574 /* question_2.cpp */; };
 		875049C62AFC0A8B00A04574 /* question_3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 875049C52AFC0A8B00A04574 /* question_3.cpp */; };
 		876DDCD22AFD36F500D8C9C8 /* question_4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 876DDCD12AFD36F500D8C9C8 /* question_4.cpp */; };
+		876DDCD52AFD478300D8C9C8 /* Plane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 876DDCD42AFD478300D8C9C8 /* Plane.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		875049C32AFC0A3800A04574 /* question_2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = question_2.cpp; sourceTree = "<group>"; };
 		875049C52AFC0A8B00A04574 /* question_3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = question_3.cpp; sourceTree = "<group>"; };
 		876DDCD12AFD36F500D8C9C8 /* question_4.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = question_4.cpp; sourceTree = "<group>"; };
+		876DDCD32AFD46CE00D8C9C8 /* Plane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Plane.h; sourceTree = "<group>"; };
+		876DDCD42AFD478300D8C9C8 /* Plane.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Plane.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				875049C32AFC0A3800A04574 /* question_2.cpp */,
 				875049C52AFC0A8B00A04574 /* question_3.cpp */,
 				876DDCD12AFD36F500D8C9C8 /* question_4.cpp */,
+				876DDCD32AFD46CE00D8C9C8 /* Plane.h */,
+				876DDCD42AFD478300D8C9C8 /* Plane.cpp */,
 			);
 			path = "homework 2";
 			sourceTree = "<group>";
@@ -130,6 +135,7 @@
 			files = (
 				875049C62AFC0A8B00A04574 /* question_3.cpp in Sources */,
 				875049C42AFC0A3800A04574 /* question_2.cpp in Sources */,
+				876DDCD52AFD478300D8C9C8 /* Plane.cpp in Sources */,
 				876DDCD22AFD36F500D8C9C8 /* question_4.cpp in Sources */,
 				875049BB2AFC082300A04574 /* question_1.cpp in Sources */,
 			);

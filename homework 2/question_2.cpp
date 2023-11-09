@@ -4,7 +4,7 @@ AERSP 424
 Homework 2
 Question 2: creating plane class
 */
-
+/*
 #include <iostream> //including input output library
 #include <map> //including map library
 #include <string> //including string library
@@ -68,3 +68,4 @@ public: //public members
 int main() { //main function to make program compile and run
     return 0; //returning dummy 0
 }
+*/

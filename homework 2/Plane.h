@@ -1,16 +1,7 @@
-/*
-Andrew Glenn
-AERSP 424
-Homework 2
-Question 4: creating airliner and general aviation classes
-*/
-
-#include <iostream> //including input output library
-#include <map> //including map library
+#pragma once //only use header file once
 #include <string> //including string library
-#include <random> //including random library
 
-using namespace std; //using standard library
+using namespace std; //using stad
 
 class Plane { //creating plane class
 protected: //protected members
@@ -94,39 +85,3 @@ public: //public members
         return d(gen); //returning answer
     }
 };
-
-class Airliner : public Plane {
-private: //private members
-    string Airline; //airline string
-public: //public members
-    Airliner(string airline, string from, string to) : Plane(from, to) { //constructor
-        Airline = airline; //setting Airline variable to value
-    }
-    ~Airliner(); //deconstructor
-    string plane_type(string Airline) { //overridden function for plane type
-        return Airline; //returning Airline
-    }
-    double time_on_ground () { //overridden function
-        double mean = 1800; //given mean value
-        double std = 600; //given standard deviation
-        double wait_time = draw_from_normal_distribution(mean, std); //gettin wait time
-        return wait_time; //returning wait time
-    }
-};
-
-class GeneralAviation : public Plane {
-public: //public members
-    GeneralAviation(string from, string to) : Plane(from, to) { //constructor
-    }
-    ~GeneralAviation(); //deconstructor
-    double time_on_ground () { //overridden function
-        double mean = 600; //given mean value
-        double std = 60; //given standard deviation
-        double wait_time = draw_from_normal_distribution(mean, std); //gettin wait time
-        return wait_time; //returning wait time
-    }
-};
-
-int main() { //main function to make program compile and run
-    return 0; //returning dummy 0
-}
