@@ -25,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		875049B72AFC082300A04574 /* homework 2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "homework 2"; sourceTree = BUILT_PRODUCTS_DIR; };
+		876A62662AFDDB5800D880EF /* ATC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATC.h; sourceTree = "<group>"; };
 		876DDCD12AFD36F500D8C9C8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		876DDCD32AFD46CE00D8C9C8 /* Plane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Plane.h; sourceTree = "<group>"; };
 		876DDCD42AFD478300D8C9C8 /* Plane.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Plane.cpp; sourceTree = "<group>"; };
@@ -67,6 +68,7 @@
 				876DDCD42AFD478300D8C9C8 /* Plane.cpp */,
 				87C00CD12AFD815800BB53D9 /* Airliner.h */,
 				87C00CD22AFD81F400BB53D9 /* GeneralAviation.h */,
+				876A62662AFDDB5800D880EF /* ATC.h */,
 			);
 			path = "homework 2";
 			sourceTree = "<group>";

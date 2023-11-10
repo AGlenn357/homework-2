@@ -1,5 +1,6 @@
 #include "Plane.h"
 #include <random>
+#include <iostream>
 
 using namespace std;
 
@@ -13,7 +14,7 @@ Plane::Plane(string from, string to) { //Plane constructor
     airport.insert(pair<string,int>("ORD-SCE",640)); //inserting Chicago airport data
     airport.insert(pair<string,int>("PHL-SCE",160)); //inserting Philadelphia airport data
     airport.insert(pair<string,int>("EWR-SCE",220)); //inserting Newark airport data
-    distance = airport[from]; //distance of flight
+    distance = airport[from+"-"+to]; //distance of flight
     pos = 0; //initializing position to 0
     vel = 0; //initializing velocity to 0
     wait_time = 0; //initializing wait time to 0
