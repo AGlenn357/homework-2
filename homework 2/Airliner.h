@@ -10,7 +10,7 @@ public: //public members
         Airline = airline; //setting Airline variable to value
     }
     ~Airliner() {} //deconstructor
-    string plane_type(string Airline) { //overridden function for plane type
+    string plane_type() { //overridden function for plane type
         return Airline; //returning Airline
     }
     double time_on_ground () { //overridden function

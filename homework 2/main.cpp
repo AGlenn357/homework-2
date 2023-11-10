@@ -14,12 +14,13 @@ main file
 #include "GeneralAviation.h"
 #include <stdio.h>
 #include "ATC.h"
-#include <SDL.h>
+#include "SDL.h"
 #include "HW2_Visualizer.h"
 
 using namespace std; //using standard library
 
 int main(int argc, char** argv) { //main function to make program compile and run
+    HW2_VIZ viz;
     Airliner aircraft1("AA", "SCE", "PHL"); //instantiating aircraft 1
     Airliner aircraft2("UA", "SCE", "ORD"); //instantiating aircraft 2
     Airliner aircraft3("UA", "SCE", "EWR"); //instantiating aircraft 3
@@ -50,7 +51,7 @@ int main(int argc, char** argv) { //main function to make program compile and ru
     atc.register_plane(aircraft6);
     atc.register_plane(aircraft7);
     
-    for (int i = 0; i < 1000; i++) {
+    while (true) {
         aircraft1.operate(time_step);
         aircraft2.operate(time_step);
         aircraft3.operate(time_step);
@@ -59,7 +60,16 @@ int main(int argc, char** argv) { //main function to make program compile and ru
         aircraft6.operate(time_step);
         aircraft7.operate(time_step);
         atc.control_traffic();
+        viz.visualize_plane(aircraft1.plane_type(), aircraft1.getorigin(), aircraft1.getdestination(), aircraft1.getpos());
+        viz.visualize_plane(aircraft2.plane_type(), aircraft2.getorigin(), aircraft2.getdestination(), aircraft2.getpos());
+        viz.visualize_plane(aircraft3.plane_type(), aircraft3.getorigin(), aircraft3.getdestination(), aircraft3.getpos());
+        viz.visualize_plane(aircraft4.plane_type(), aircraft4.getorigin(), aircraft4.getdestination(), aircraft4.getpos());
+        viz.visualize_plane(aircraft5.plane_type(), aircraft5.getorigin(), aircraft5.getdestination(), aircraft5.getpos());
+        viz.visualize_plane(aircraft6.plane_type(), aircraft6.getorigin(), aircraft6.getdestination(), aircraft6.getpos());
+        viz.visualize_plane(aircraft7.plane_type(), aircraft7.getorigin(), aircraft7.getdestination(), aircraft7.getpos());
         cout << aircraft1.getpos() << ", " << aircraft2.getpos() << ", " << aircraft3.getpos() << ", " << aircraft4.getpos() << ", " << aircraft5.getpos() << ", " << aircraft6.getpos() << ", " << aircraft7.getpos() << endl;
+        
+        viz.update(time_step);
     }
     
     return 0; //returning dummy 0

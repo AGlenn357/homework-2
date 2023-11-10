@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		870CAB122AFEA2AB00BDE423 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 870CAB112AFEA2AB00BDE423 /* SDL2.framework */; };
-		870CAB132AFEA2AB00BDE423 /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 870CAB112AFEA2AB00BDE423 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		87460D542AFE933A00EF231F /* HW2_Visualizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87460D532AFE933A00EF231F /* HW2_Visualizer.cpp */; };
+		870CAB192AFEADAC00BDE423 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 870CAB182AFEADAC00BDE423 /* SDL2.framework */; };
+		870CAB1A2AFEADAC00BDE423 /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 870CAB182AFEADAC00BDE423 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		870CAB1D2AFEB07E00BDE423 /* HW2_Visualizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 870CAB1C2AFEB07E00BDE423 /* HW2_Visualizer.cpp */; };
 		876DDCD22AFD36F500D8C9C8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 876DDCD12AFD36F500D8C9C8 /* main.cpp */; };
 		876DDCD52AFD478300D8C9C8 /* Plane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 876DDCD42AFD478300D8C9C8 /* Plane.cpp */; };
 /* End PBXBuildFile section */
@@ -21,7 +21,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				870CAB132AFEA2AB00BDE423 /* SDL2.framework in Embed Frameworks */,
+				870CAB1A2AFEADAC00BDE423 /* SDL2.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,10 +38,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		870CAB102AFE9F3C00BDE423 /* Headers */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Headers; path = SDL2.framework/Versions/A/Headers; sourceTree = SOURCE_ROOT; };
-		870CAB112AFEA2AB00BDE423 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDL2.framework; sourceTree = "<group>"; };
-		87460D532AFE933A00EF231F /* HW2_Visualizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HW2_Visualizer.cpp; path = ../../../../../../../Downloads/HW2_Visualizer.cpp; sourceTree = "<group>"; };
-		87460D552AFE934200EF231F /* HW2_Visualizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HW2_Visualizer.h; path = ../../../../../../../Downloads/HW2_Visualizer.h; sourceTree = "<group>"; };
+		870CAB142AFEA7D400BDE423 /* include */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = include; sourceTree = SOURCE_ROOT; };
+		870CAB182AFEADAC00BDE423 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		870CAB1B2AFEB07E00BDE423 /* HW2_Visualizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HW2_Visualizer.h; sourceTree = "<group>"; };
+		870CAB1C2AFEB07E00BDE423 /* HW2_Visualizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HW2_Visualizer.cpp; sourceTree = "<group>"; };
 		875049B72AFC082300A04574 /* homework 2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "homework 2"; sourceTree = BUILT_PRODUCTS_DIR; };
 		876A62662AFDDB5800D880EF /* ATC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATC.h; sourceTree = "<group>"; };
 		876DDCD12AFD36F500D8C9C8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				870CAB122AFEA2AB00BDE423 /* SDL2.framework in Frameworks */,
+				870CAB192AFEADAC00BDE423 /* SDL2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,9 +83,9 @@
 		875049B92AFC082300A04574 /* homework 2 */ = {
 			isa = PBXGroup;
 			children = (
-				870CAB102AFE9F3C00BDE423 /* Headers */,
-				87460D552AFE934200EF231F /* HW2_Visualizer.h */,
-				87460D532AFE933A00EF231F /* HW2_Visualizer.cpp */,
+				870CAB1C2AFEB07E00BDE423 /* HW2_Visualizer.cpp */,
+				870CAB1B2AFEB07E00BDE423 /* HW2_Visualizer.h */,
+				870CAB142AFEA7D400BDE423 /* include */,
 				876DDCD12AFD36F500D8C9C8 /* main.cpp */,
 				876DDCD32AFD46CE00D8C9C8 /* Plane.h */,
 				876DDCD42AFD478300D8C9C8 /* Plane.cpp */,
@@ -99,7 +99,7 @@
 		876A62672AFDF11D00D880EF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				870CAB112AFEA2AB00BDE423 /* SDL2.framework */,
+				870CAB182AFEADAC00BDE423 /* SDL2.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -163,7 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				876DDCD52AFD478300D8C9C8 /* Plane.cpp in Sources */,
-				87460D542AFE933A00EF231F /* HW2_Visualizer.cpp in Sources */,
+				870CAB1D2AFEB07E00BDE423 /* HW2_Visualizer.cpp in Sources */,
 				876DDCD22AFD36F500D8C9C8 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,12 +293,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
-					"$(PROJECT_DIR)",
 				);
 				HEADER_SEARCH_PATHS = "\"/Users/andrew_glenn/Documents/Academics/Penn State/(2023)(Fall)/AERSP 424/homework 2/include\"";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/SDL2.framework/Versions/A",
 					"\"/Users/andrew_glenn/Documents/Academics/Penn State/(2023)(Fall)/AERSP 424/homework 2/lib\"",
 				);
 				OTHER_CODE_SIGN_FLAGS = "--deep";
@@ -313,12 +311,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
-					"$(PROJECT_DIR)",
 				);
 				HEADER_SEARCH_PATHS = "\"/Users/andrew_glenn/Documents/Academics/Penn State/(2023)(Fall)/AERSP 424/homework 2/include\"";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/SDL2.framework/Versions/A",
 					"\"/Users/andrew_glenn/Documents/Academics/Penn State/(2023)(Fall)/AERSP 424/homework 2/lib\"",
 				);
 				OTHER_CODE_SIGN_FLAGS = "--deep";
