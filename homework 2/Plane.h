@@ -35,6 +35,9 @@ public: //public members
     string getdestination(){ //getting destination
         return destination; //return destination from private section
     }
+    double getdistance() {
+        return distance;
+    }
     bool getat_SCE() { //getting State College condtion
         return at_SCE; //return whether plane is at State College
     }
