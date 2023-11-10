@@ -43,6 +43,14 @@ int main() { //main function to make program compile and run
         
     }
     
+    Airliner*test;
+    test = &aircraft1;
+    
+    cout << test << endl;
+    
+    Plane aircraft8 = *test;
+        
+    cout << aircraft1.getat_SCE() << endl;
     return 0; //returning dummy 0
 }
 
