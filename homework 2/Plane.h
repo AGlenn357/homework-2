@@ -1,9 +1,8 @@
-#pragma once //only use header file once
-#include <string> //including string library
-#include <map> //including map library
-#include <random> //including random library for normal distribution
+#pragma once
+#include <string>
+#include <map>
 
-using namespace std; //using standard library
+using namespace std;
 
 class Plane { //creating plane class
 protected: //protected members
@@ -20,7 +19,7 @@ private: //private members
 public: //public members
     Plane(string from, string to); //constructor
     ~Plane(); //deconstructor
-    void operate(double dt); //operate function
+    void operate (double dt); //operate function
     double getpos() { //getting position function
         return pos; //return position from private section
     }
@@ -45,8 +44,11 @@ public: //public members
     void setloiter_time(double x) { //setting loiter time
         loiter_time = x; //loiter time is input
     }
-    double distance_to_SCE(double distance, double pos, string destination); //function for distance to State College
-    virtual double time_on_ground(); //virtual function for time on the ground
-    virtual string plane_type(string x);
-    static double draw_from_normal_distribution (double mean, double std); //function to get random number with set mean and standard deviation
+    double distance_to_SCE(double distance, double pos, string destination); //finding distance to State College
+    virtual double time_on_ground() { //virtual function for time on the ground
+        return 0; //dummy return value
+    }
+    virtual string plane_type(); //virtual function for plane type
+    static double draw_from_normal_distribution (double mean, double std); //function to get random number with set mean and
 };
+

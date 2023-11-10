@@ -7,10 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		875049BB2AFC082300A04574 /* question_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 875049BA2AFC082300A04574 /* question_1.cpp */; };
-		875049C42AFC0A3800A04574 /* question_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 875049C32AFC0A3800A04574 /* question_2.cpp */; };
-		875049C62AFC0A8B00A04574 /* question_3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 875049C52AFC0A8B00A04574 /* question_3.cpp */; };
-		876DDCD22AFD36F500D8C9C8 /* question_4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 876DDCD12AFD36F500D8C9C8 /* question_4.cpp */; };
+		876DDCD22AFD36F500D8C9C8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 876DDCD12AFD36F500D8C9C8 /* main.cpp */; };
 		876DDCD52AFD478300D8C9C8 /* Plane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 876DDCD42AFD478300D8C9C8 /* Plane.cpp */; };
 /* End PBXBuildFile section */
 
@@ -28,12 +25,11 @@
 
 /* Begin PBXFileReference section */
 		875049B72AFC082300A04574 /* homework 2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "homework 2"; sourceTree = BUILT_PRODUCTS_DIR; };
-		875049BA2AFC082300A04574 /* question_1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = question_1.cpp; sourceTree = "<group>"; };
-		875049C32AFC0A3800A04574 /* question_2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = question_2.cpp; sourceTree = "<group>"; };
-		875049C52AFC0A8B00A04574 /* question_3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = question_3.cpp; sourceTree = "<group>"; };
-		876DDCD12AFD36F500D8C9C8 /* question_4.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = question_4.cpp; sourceTree = "<group>"; };
+		876DDCD12AFD36F500D8C9C8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		876DDCD32AFD46CE00D8C9C8 /* Plane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Plane.h; sourceTree = "<group>"; };
 		876DDCD42AFD478300D8C9C8 /* Plane.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Plane.cpp; sourceTree = "<group>"; };
+		87C00CD12AFD815800BB53D9 /* Airliner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Airliner.h; sourceTree = "<group>"; };
+		87C00CD22AFD81F400BB53D9 /* GeneralAviation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneralAviation.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,12 +62,11 @@
 		875049B92AFC082300A04574 /* homework 2 */ = {
 			isa = PBXGroup;
 			children = (
-				875049BA2AFC082300A04574 /* question_1.cpp */,
-				875049C32AFC0A3800A04574 /* question_2.cpp */,
-				875049C52AFC0A8B00A04574 /* question_3.cpp */,
-				876DDCD12AFD36F500D8C9C8 /* question_4.cpp */,
+				876DDCD12AFD36F500D8C9C8 /* main.cpp */,
 				876DDCD32AFD46CE00D8C9C8 /* Plane.h */,
 				876DDCD42AFD478300D8C9C8 /* Plane.cpp */,
+				87C00CD12AFD815800BB53D9 /* Airliner.h */,
+				87C00CD22AFD81F400BB53D9 /* GeneralAviation.h */,
 			);
 			path = "homework 2";
 			sourceTree = "<group>";
@@ -133,11 +128,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				875049C62AFC0A8B00A04574 /* question_3.cpp in Sources */,
-				875049C42AFC0A3800A04574 /* question_2.cpp in Sources */,
 				876DDCD52AFD478300D8C9C8 /* Plane.cpp in Sources */,
-				876DDCD22AFD36F500D8C9C8 /* question_4.cpp in Sources */,
-				875049BB2AFC082300A04574 /* question_1.cpp in Sources */,
+				876DDCD22AFD36F500D8C9C8 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
