@@ -12,11 +12,14 @@ main file
 #include "Plane.h"
 #include "Airliner.h"
 #include "GeneralAviation.h"
+#include <stdio.h>
 #include "ATC.h"
+#include <SDL.h>
+#include "HW2_Visualizer.h"
 
 using namespace std; //using standard library
 
-int main() { //main function to make program compile and run
+int main(int argc, char** argv) { //main function to make program compile and run
     Airliner aircraft1("AA", "SCE", "PHL"); //instantiating aircraft 1
     Airliner aircraft2("UA", "SCE", "ORD"); //instantiating aircraft 2
     Airliner aircraft3("UA", "SCE", "EWR"); //instantiating aircraft 3
@@ -38,10 +41,25 @@ int main() { //main function to make program compile and run
     
     double time_step = 10; //time step
     
+    ATC atc;
+    atc.register_plane(aircraft1);
+    atc.register_plane(aircraft2);
+    atc.register_plane(aircraft3);
+    atc.register_plane(aircraft4);
+    atc.register_plane(aircraft5);
+    atc.register_plane(aircraft6);
+    atc.register_plane(aircraft7);
+    
     for (int i = 0; i < 1000; i++) {
         aircraft1.operate(time_step);
-        cout << aircraft1.getpos() << endl;
-        
+        aircraft2.operate(time_step);
+        aircraft3.operate(time_step);
+        aircraft4.operate(time_step);
+        aircraft5.operate(time_step);
+        aircraft6.operate(time_step);
+        aircraft7.operate(time_step);
+        atc.control_traffic();
+        cout << aircraft1.getpos() << ", " << aircraft2.getpos() << ", " << aircraft3.getpos() << ", " << aircraft4.getpos() << ", " << aircraft5.getpos() << ", " << aircraft6.getpos() << ", " << aircraft7.getpos() << endl;
     }
     
     return 0; //returning dummy 0
