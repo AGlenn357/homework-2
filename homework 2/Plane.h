@@ -54,4 +54,3 @@ public: //public members
     virtual string plane_type(); //virtual function for plane type
     static double draw_from_normal_distribution (double mean, double std); //function to get random number with set mean and
 };
-

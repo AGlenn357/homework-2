@@ -16,7 +16,7 @@ public: //public members
     double time_on_ground () { //overridden function
         double mean = 1800; //given mean value
         double std = 600; //given standard deviation
-        double wait_time = draw_from_normal_distribution(mean, std); //gettin wait time
+        wait_time = draw_from_normal_distribution(mean, std); //gettin wait time
         return wait_time; //returning wait time
     }
 };

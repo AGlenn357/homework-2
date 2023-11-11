@@ -43,6 +43,13 @@ void Plane::operate (double dt) {
         string temp = origin; //temporary variable set to origin
         origin = destination; //setting origin to destination
         destination = temp; //setting destination to old origin (temp);
+        pos = 0; //resetting position to zero
+    }
+    if (wait_time < 0) {
+        wait_time = 0;
+    }
+    if (loiter_time < 0) {
+        loiter_time = 0;
     }
 }
 
@@ -65,4 +72,3 @@ double Plane::draw_from_normal_distribution(double mean, double std) { //functio
     normal_distribution<> d{mean, std}; //getting normal distribution
     return d(gen); //returning answer
 }
-

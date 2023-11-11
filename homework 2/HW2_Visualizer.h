@@ -1,3 +1,4 @@
+/*
 #ifndef HW2_VISUALIZER
 #define HW2_VISUALIZER
 
@@ -52,3 +53,4 @@ public:
 };
 
 #endif // !HW2_VISUALIZER
+*/

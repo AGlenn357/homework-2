@@ -1,3 +1,4 @@
+/*
 #include "HW2_Visualizer.h"
 
 HW2_VIZ::HW2_VIZ ()
@@ -99,3 +100,4 @@ void HW2_VIZ::visualize_plane ( std::string airline, std::string origin, std::st
   p_viz.planes_info[key].v3.position.x += v0.position.x;
   p_viz.planes_info[key].v3.position.y += v0.position.y;
 }
+*/
