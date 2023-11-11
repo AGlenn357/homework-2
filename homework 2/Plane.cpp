@@ -7,7 +7,6 @@ using namespace std;
 Plane::Plane(string from, string to) { //Plane constructor
     origin = from; //orgin of plane
     destination = to; //destination of plane
-    map<string, int> airport; //creating map airport
     airport.insert(pair<string,int>("SCE-ORD",640)); //inserting Chicago airport data
     airport.insert(pair<string,int>("SCE-PHL",160)); //inserting Philadelphia airport data
     airport.insert(pair<string,int>("SCE-EWR",220)); //inserting Newark airport data
